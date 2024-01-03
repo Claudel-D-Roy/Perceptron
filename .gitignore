@@ -1,0 +1,8 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/TP3-OCR-WPF/bin/Debug
+/TP3-OCR-WPF/obj
+*.user
+/.vs/TP3-OCR-WPF

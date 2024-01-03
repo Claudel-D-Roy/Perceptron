@@ -1,0 +1,29 @@
+﻿<Window x:Name="frmAnalyseEcriture" x:Class="TP3_OCR_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP3_OCR_WPF"
+        mc:Ignorable="d"
+        Title="Analyse écriture" Height="648.35" Width="457.6">
+    <Grid Margin="0,0,0,0">
+        <local:ucZoneDessin x:Name="ucDessin" HorizontalAlignment="Left" Height="138" Margin="148,35,0,0" VerticalAlignment="Top" Width="142" BorderThickness="3" BorderBrush="Black" RenderTransformOrigin="1.27,-0.162"/>
+
+
+
+
+        <Button x:Name="btnEntrainement" Content="Entrainement" HorizontalAlignment="Left" Margin="307,232,-0.2,0" VerticalAlignment="Top" Width="86" Height="24" Click="btnEntrainement_Click"/>
+        <Label x:Name="lblEntrainement" Content="Valeur entrainée : " HorizontalAlignment="Left" Height="24" Margin="10,232,0,0" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="txtValeurEntrainee" HorizontalAlignment="Left" Height="25" Margin="131,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171"/>
+        <Button x:Name="btnTest" Content="Test" HorizontalAlignment="Left" Margin="307,322,0,0" VerticalAlignment="Top" Width="86" Height="24" Click="btnTest_Click"/>
+        <Label x:Name="lblValeurTestee" Content="Valeur testée : " HorizontalAlignment="Left" Height="24" Margin="18,321,0,0" VerticalAlignment="Top" Width="113"/>
+        <TextBox x:Name="txtValeurTestee" HorizontalAlignment="Left" Height="25" Margin="131,321,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" IsReadOnly="True"/>
+        <Button x:Name="btnEffacer" Content="Effacer" HorizontalAlignment="Left" Margin="307,97,0,0" VerticalAlignment="Top" Width="86" Height="24" Click="btnEffacer_Click"/>
+        <TextBox x:Name="txtConsole" HorizontalAlignment="Left" Height="164" Margin="32,409,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+        <GroupBox x:Name="grpDessinEntrainement" Header="Zone de dessin" HorizontalAlignment="Left" Height="178" Margin="7,10,0,0" VerticalAlignment="Top" Width="422"/>
+        <GroupBox x:Name="grpEntrainement" Header="Entrainement" HorizontalAlignment="Left" Height="89" Margin="10,193,0,0" VerticalAlignment="Top" Width="419"/>
+        <GroupBox x:Name="grpTests" Header="Tests" HorizontalAlignment="Left" Height="83" Margin="10,287,0,0" VerticalAlignment="Top" Width="419"/>
+        <GroupBox x:Name="grpConsole" Header="Console" HorizontalAlignment="Left" Height="214" Margin="10,379,0,0" VerticalAlignment="Top" Width="419"/>
+
+    </Grid>
+</Window>
